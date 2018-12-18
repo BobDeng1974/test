@@ -1,0 +1,20 @@
+menuconfig TINATEST_BASE_AUDIO_CODEC
+    bool "codec"
+
+if TINATEST_BASE_AUDIO_CODEC
+    source playback_bits_supported/Config.in
+    source playback_rate_supported/Config.in
+    source playback_rate_verify/Config.in
+    source capture_bits_supported/Config.in
+    source capture_rate_supported/Config.in
+    source headphone_playback/Config.in
+    source headphone_volume_adjust/Config.in
+    source speaker_playback/Config.in
+    source speaker_volume_adjust/Config.in
+    source lineout_playback/Config.in
+    source lineout_volume_adjust/Config.in
+    source mic_capture/Config.in
+    source mic_volume_adjust/Config.in
+    source linein_capture/Config.in
+    source phonein_capture/Config.in
+endif

@@ -1,0 +1,6 @@
+menuconfig TINATEST_BASE_STORAGE
+    bool "storage"
+
+if TINATEST_BASE_STORAGE
+    source hotplug/Config.in
+endif

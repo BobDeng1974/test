@@ -1,0 +1,6 @@
+menuconfig TINATEST_BASE_AUDIO
+    bool "audio"
+
+if TINATEST_BASE_AUDIO
+    source codec/Config.in
+endif
